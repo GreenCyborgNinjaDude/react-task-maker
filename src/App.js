@@ -7,6 +7,7 @@ import AddForm from './components/AddForm'
 import { useState } from 'react'
 
 function App () {
+  const [showAddForm, setShowAddForm] = useState(false)
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -37,6 +38,18 @@ function App () {
     //  });
   }
   //Add Task
+  const addTask = task => {
+    const newID = Math.floor(Math.random() * 10000) + 1
+    const newTask = { newID, ...task }
+    setTasks([...tasks, newTask])
+    // console.log('id: ' + task.id)
+    // console.log('text: ' + task.text)
+    // console.log('day: ' + task.day)
+    // console.log('reminder: ' + task.reminder)
+    // tasks.forEach(element => {
+    //   console.log(element)
+    // })
+  }
 
   //Toggle Reminder
   const toggleReminder = id => {
@@ -49,8 +62,11 @@ function App () {
 
   return (
     <div className='container'>
-      <Header />
-      <AddForm />
+      <Header
+        onAddEvent={() => setShowAddForm(!showAddForm)}
+        showAdd={showAddForm}
+      />
+      {showAddForm && <AddForm onAddTask={addTask} />}
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
       ) : (
