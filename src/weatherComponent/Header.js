@@ -4,7 +4,11 @@ import PropTypes from 'prop-types'
 const Header = ({ title }) => {
   return (
     <div>
-      <h1 className='weather-header'> {title} </h1>
+      <h1 className='weather-header'>
+        {' '}
+        {title}
+        <img className='RI' src='favicon.ico' alt='React_Icon' />
+      </h1>
     </div>
   )
 }

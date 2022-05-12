@@ -130,10 +130,15 @@ footer {
   margin-bottom: 20px;
 }
 
+.RI {
+  display: inline-block;
+  cursor: pointer;
+}
+
 .region-container{
   width: fit-content;
   display:inline;
-  padding-right: 30px;
+  padding-right: 10px;
 }
 .region-title{
   color: #000;
@@ -150,7 +155,7 @@ footer {
 .country-container{
   width: fit-content;
   display:inline;
-  padding-right: 35px;
+  padding-right: 10px;
 }
 .country-title{
   color: #000;

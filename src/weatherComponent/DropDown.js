@@ -7,21 +7,21 @@ const DropDown = ({ titleCity, titleRegion, titleCountry }) => {
       <div className='region-container'>
         <div className='region-title'>{titleRegion}</div>
         <select className='region-table'>
-          <option value='all'></option>
+          <option value='all'> default </option>
         </select>
       </div>
 
       <div className='country-container'>
         <div className='country-title'>{titleCountry}</div>
         <select className='country-table'>
-          <option value='all'></option>
+          <option value='all'> default </option>
         </select>
       </div>
 
       <div className='city-container'>
         <div className='city-title'>{titleCity}</div>
         <select className='city-table'>
-          <option value='all'></option>
+          <option value='all'> default </option>
         </select>
       </div>
     </div>
