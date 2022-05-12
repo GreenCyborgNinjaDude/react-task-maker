@@ -110,3 +110,72 @@ footer {
   margin-top: 30px;
   text-align: center;
 }
+
+/* Weather App Style Section*/
+
+.weather-container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 500px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.weather-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.region-container{
+  width: fit-content;
+  display:inline;
+  padding-right: 30px;
+}
+.region-title{
+  color: #000;
+  display:inline;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.region-table {
+  display:inline;
+  border-radius: 5px;
+}
+
+.country-container{
+  width: fit-content;
+  display:inline;
+  padding-right: 35px;
+}
+.country-title{
+  color: #000;
+  display:inline;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.country-table {
+  display:inline;
+  border-radius: 5px;
+}
+
+.city-container{
+  width: fit-content;
+  display:inline;
+}
+.city-title{
+  color: #000;
+  display:inline;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city-table {
+  display:inline;
+  border-radius: 5px;
+}

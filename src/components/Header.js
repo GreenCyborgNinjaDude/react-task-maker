@@ -7,7 +7,7 @@ const Header = ({ title, onAddEvent, showAdd }) => {
     <header className='header'>
       <h1> {title}</h1>
       <Button
-        backgroundColor='blue'
+        backgroundColor={showAdd ? 'red' : 'blue'}
         text={showAdd ? 'Close' : 'Add'}
         onClick={onAddEvent}
       />
@@ -21,7 +21,7 @@ Header.defaultProps = {
 
 Header.propTypes = {
   title: PropTypes.string.isRequired
-}
+} 
 
 //CSS in JS
 // const headingStyle = {
