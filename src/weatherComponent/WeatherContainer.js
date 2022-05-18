@@ -1,9 +1,10 @@
 import React from 'react'
+import WeatherReport from './WeatherReport'
 
 const WeatherContainer = () => {
   return (
     <div className='weather-container'>
-      <div className></div>
+      <WeatherReport />
     </div>
   )
 }
